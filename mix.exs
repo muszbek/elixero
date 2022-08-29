@@ -34,7 +34,7 @@ defmodule EliXero.Mixfile do
     [
       maintainers: ["muszbek"],
       licenses: ["MIT"],
-      links: %{"Github" => "https://github.com/muszbek/elixero"}
+      links: %{"Github" => "https://github.com/WeBill65/elixero.git"}
     ]
   end
 end
