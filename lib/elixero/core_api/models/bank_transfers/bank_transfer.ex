@@ -9,7 +9,7 @@ defmodule EliXero.CoreApi.Models.BankTransfers.BankTransfer do
         :FromBankTransactionID,
         :ToBankTransactionID,
         :CurrencyRate,
-        :Reference,
+        # :Reference,
         :Amount,
         :Date,
         :HasAttachments,
@@ -23,7 +23,7 @@ defmodule EliXero.CoreApi.Models.BankTransfers.BankTransfer do
         embeds_one :ToBankAccount, EliXero.CoreApi.Models.Accounts.Account
         field :FromBankTransactionID, Ecto.UUID
         field :ToBankTransactionID, Ecto.UUID
-        field :Reference, :binary
+        # field :Reference, :binary
         field :CurrencyRate, :decimal
         field :Amount, :decimal
         field :Date, :string
