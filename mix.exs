@@ -20,7 +20,7 @@ defmodule EliXero.Mixfile do
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:poison, "~> 3.0"},
       {:jason, "~> 1.2"},
-      {:ecto, "~> 3.10.0"}
+      {:ecto, "~> 3.9.0"}
     ]
   end
 
