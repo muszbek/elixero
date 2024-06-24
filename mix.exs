@@ -20,7 +20,7 @@ defmodule EliXero.Mixfile do
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:poison, "~> 3.0"},
       {:jason, "~> 1.2"},
-      {:ecto, "~> 3.7.2"}
+      {:ecto_sql, "~> 3.9"}
     ]
   end
 
@@ -34,7 +34,7 @@ defmodule EliXero.Mixfile do
     [
       maintainers: ["muszbek"],
       licenses: ["MIT"],
-      links: %{"Github" => "https://github.com/muszbek/elixero"}
+      links: %{"Github" => "https://github.com/WeBill65/elixero.git"}
     ]
   end
 end

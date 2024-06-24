@@ -9,6 +9,7 @@ defmodule EliXero.CoreApi.Models.BankTransfers.BankTransfer do
         :FromBankTransactionID,
         :ToBankTransactionID,
         :CurrencyRate,
+        # :Reference,
         :Amount,
         :Date,
         :HasAttachments,
@@ -22,6 +23,7 @@ defmodule EliXero.CoreApi.Models.BankTransfers.BankTransfer do
         embeds_one :ToBankAccount, EliXero.CoreApi.Models.Accounts.Account
         field :FromBankTransactionID, Ecto.UUID
         field :ToBankTransactionID, Ecto.UUID
+        # field :Reference, :binary
         field :CurrencyRate, :decimal
         field :Amount, :decimal
         field :Date, :string
@@ -29,7 +31,7 @@ defmodule EliXero.CoreApi.Models.BankTransfers.BankTransfer do
         field :UpdatedDateUTC, :string
         embeds_many :ValidationErrors, EliXero.CoreApi.Models.Common.Error
         embeds_many :Warnings, EliXero.CoreApi.Models.Common.Warning
-        field :StatusAttributeString, :string  
+        field :StatusAttributeString, :string
     end
 
     def changeset(struct, data) do
